@@ -3,10 +3,11 @@ import './Expenses.css';
 import ExpensesList from './ExpensesList';
 
 const Expenses = (props) => {
+  //   console.log(props.items);
   return (
     <div>
       <Card className="expenses">
-        <ExpensesList />
+        <ExpensesList items={props.items} />
       </Card>
     </div>
   );
