@@ -7,7 +7,6 @@ const Expenses = (props) => {
     <div>
       <Card className="expenses">
         <ExpensesList />
-        <ExpensesList />
       </Card>
     </div>
   );
