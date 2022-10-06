@@ -2,7 +2,7 @@ import ExpenseItem from './ExpenseItem';
 import './ExpensesList.css';
 
 const ExpensesList = (props) => {
-  console.log(props.items);
+  //   console.log(props.items);
   return (
     <ul className="expenses-list">
       {props.items.map((expense) => (
