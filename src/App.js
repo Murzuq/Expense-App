@@ -1,5 +1,6 @@
 import './App.css';
 import Expenses from './components/Expenses/Expenses';
+import ExpenseForm from './components/NewExpense/ExpenseForm';
 
 const DUMMY_EXPENSES = [
   {
@@ -34,6 +35,7 @@ const App = (props) => {
   return (
     <div>
       <h1>Expense App</h1>
+      <ExpenseForm />
       <Expenses items={DUMMY_EXPENSES} />
     </div>
   );
