@@ -32,10 +32,16 @@ const DUMMY_EXPENSES = [
 
 const App = (props) => {
   // console.log(DUMMY_EXPENSES);
+
+  const addExpenseHandler = (expense) => {
+    // return [expense];
+    console.log(expense);
+  };
+
   return (
     <div>
       <h1>Expense App</h1>
-      <NewExpense />
+      <NewExpense onAddExpense={addExpenseHandler} />
       <Expenses items={DUMMY_EXPENSES} />
     </div>
   );
