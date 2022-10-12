@@ -15,6 +15,7 @@ const NewExpense = (props) => {
 
     console.log(expenseData);
     props.onAddExpense(expenseData);
+    setIsEditing(false);
   };
 
   const startEditingHandler = () => {
@@ -30,7 +31,7 @@ const NewExpense = (props) => {
       {!isEditing && (
         <div className="new-expense__actions">
           <button onClick={startEditingHandler} type="submit">
-            Add Expense
+            Add New Expense
           </button>
         </div>
       )}
